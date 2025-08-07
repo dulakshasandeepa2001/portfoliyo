@@ -20,7 +20,7 @@ const Home = () => {
               transition={{ delay: 0.3, duration: 0.5 }}
               className="profile-image"
             >
-              <img src=".\src\assets\profile.png" alt="Profile" />
+              <img src="aboutme/src/assets/profile.png" />
             </motion.div>
             
             <motion.h1 
