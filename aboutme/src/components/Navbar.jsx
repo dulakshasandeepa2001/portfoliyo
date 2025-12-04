@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { Menu, X, GraduationCap } from 'lucide-react'
+import { Menu, X, Code2 } from 'lucide-react'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -12,12 +12,16 @@ const Navbar = () => {
     { path: '/certificates', label: 'Certificates' },
     { path: '/complete-projects', label: 'Complete Projects' },
     { path: '/current-projects', label: 'Current Projects' },
-    { path: '/contact', label: 'Contact Me' }
+    { path: '/contact', label: 'Contact' }
   ]
 
   return (
     <nav className="navbar">
       <div className="nav-container">
+        <Link to="/" className="nav-logo">
+          <Code2 size={24} />
+          <span>Dulaksha</span>
+        </Link>
       
         <div className={`nav-menu ${isOpen ? 'active' : ''}`}>
           {navItems.map((item) => (

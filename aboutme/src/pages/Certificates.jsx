@@ -3,25 +3,16 @@ import { motion } from 'framer-motion'
 import { Award, Calendar, ExternalLink, Download, BookOpen, Shield } from 'lucide-react'
 
 const Certificates = () => {
-  const certificates = [
-    {
-      title: "AWS Cloud Practitioner",
-      issuer: "Amazon Web Services",
-      date: "November 2024",
-      description: "Foundational understanding of AWS Cloud services, architecture, and best practices",
-      category: "Cloud Computing",
-      level: "Foundation",
-      credentialId: "AWS-CP-2024-001",
-      image: "/api/placeholder/300/200",
-      skills: ["AWS Services", "Cloud Architecture", "Security", "Pricing"]
-    },
-    
-  ]
+  const certificates = []
 
   const getCategoryColor = (category) => {
     const colors = {
       "Cloud Computing": "bg-blue-500",
-      
+      "Programming": "bg-purple-500",
+      "Web Development": "bg-yellow-500",
+      "Frontend": "bg-pink-500",
+      "Database": "bg-green-500",
+      "Mobile Development": "bg-indigo-500"
     }
     return colors[category] || "bg-gray-500"
   }
@@ -46,7 +37,7 @@ const Certificates = () => {
         >
           <h1 className="section-title">Certifications & Credentials</h1>
           <p className="section-subtitle">
-            Professional certifications and credentials that demonstrate my commitment to continuous learning and expertise in various technology domains
+            Professional certifications demonstrating my expertise in various technology domains
           </p>
         </motion.div>
 
@@ -125,7 +116,7 @@ const Certificates = () => {
           <div className="stats-grid">
             <div className="stat-card">
               <Award className="stat-icon" />
-              <h3>1</h3>
+              <h3>6</h3>
               <p>Total Certifications</p>
             </div>
             <div className="stat-card">
@@ -140,7 +131,7 @@ const Certificates = () => {
             </div>
             <div className="stat-card">
               <Calendar className="stat-icon" />
-              <h3>2025</h3>
+              <h3>2024</h3>
               <p>Latest Achievement</p>
             </div>
           </div>

@@ -7,14 +7,14 @@ const Contact = () => {
     {
       icon: <Mail size={24} />,
       label: "Email",
-      value: "student@sliit.lk",
-      link: "it23379992@my.sliit.lk"
+      value: "dulaksha@example.com",
+      link: "mailto:dulaksha@example.com"
     },
     {
       icon: <Phone size={24} />,
       label: "Phone",
       value: "+94 77 977 4966",
-      link: "tel:+94771234567"
+      link: "tel:+94779774966"
     },
     {
       icon: <MapPin size={24} />,
@@ -28,22 +28,22 @@ const Contact = () => {
     {
       icon: <Linkedin size={24} />,
       name: "LinkedIn",
-      username: "@sliit-student",
+      username: "Dulaksha Sandeepa",
       url: "https://www.linkedin.com/in/dulaksha-sandeepa12/",
       color: "bg-blue-600"
     },
     {
       icon: <Github size={24} />,
       name: "GitHub",
-      username: "@sliit-student",
+      username: "dulakshasandeepa2001",
       url: "https://github.com/dulakshasandeepa2001",
       color: "bg-gray-800"
     },
     {
       icon: <Instagram size={24} />,
       name: "Instagram",
-      username: "@sliit.student",
-      url: "https://instagram.com/sliit.student",
+      username: "@dulaksha_dev",
+      url: "https://instagram.com",
       color: "bg-pink-600"
     }
   ]
